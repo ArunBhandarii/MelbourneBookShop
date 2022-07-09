@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style> 
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #Blue;
+  padding: 10px;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-right">
+        <ul>
+           <li class="logo"> BOOKhillSHOP </li>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="products.php">Book Catalogue</a></li>
+        <li><a class="active" href="About.html">Contact</a></li>
+        <li><a href="desc.html">FAQ</a></li>
+        <li> <a href="order.html"> Order page</a></li>
+        <li> <input class="search" type="text" name="" placeholder="Search"></li>
+        <li> <a href="login.html">Login</a></li>
+            <li> <a href="Registration.html">Sign Up</a></li>
+    </ul>
+    
+    </div>
+</nav>
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>We provide easy interface to our customers for purchasing books online.</p>
+  <p>For any query leave a comment in the contact us page. You can also send us email and call us 
+      on business days. 
+      <br>Thank you for your patience and hope you had a great time shopping here.
+  </p>
+</div>
+<h1 > Contact our team</h1>
+
+
+<div class="container">
+  <form action="contact.php" method="post">
+
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname" placeholder="E.g. John.">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname" placeholder="E.g. Wick">
+  
+  <label for="Email">Email</label>
+  <input type="text" id="Email" name="email" placeholder="johnwick@email.com">
+
+  <label for="Phone Number">Phone Number</label>
+  <input type="text" id="Phone Number" name="phone" placeholder="eg:+6104514567">
+           
+  <label for="State">State</label>
+  <select id="State" name="state">
+    <option value="Victoria">Victoria</option>
+    <option value="NSW">NSW</option>
+    <option value="Tasmania">Tasmania</option>
+    <option value="Adelaide">Adelaide</option>
+    <option value="Darwin">Darwin</option>
+    <option value="Canberra">Canberra</option>
+  </select>
+
+  <label for="subject">Subject</label>
+  <textarea id="subject" name="message" placeholder="Write your query"></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+</div>
+<footer>
+  &copy; Arun Bhandari | All Rights Reserved
+</footer>
+
+</body>
+</html>
+
+
